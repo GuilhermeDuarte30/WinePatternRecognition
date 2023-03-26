@@ -24,7 +24,7 @@ head(df_total_vinhos)
 summary(df_total_vinhos)
 
 
-#Summary and covariance matrix
+#Summary and correlation matrix
 #alcool com MSA baixo e impedia que KMO fosse superior a 0,5 e como tal foi removido
 
 data <- df_total_vinhos[,1:10]
@@ -67,7 +67,7 @@ round(pc10$values,3)
 #Kaizer criterion
 crit_kaiser=data.frame(round(pc10$values,3))
 
-colnames(crit_kaiser) <- c("valor próprio")
+colnames(crit_kaiser) <- c("valor prÃ³prio")
 
 #Screeplot - Find the elbow
 plot(pc10$values, type = "b", main = "Scree plot for Wine dataset",
