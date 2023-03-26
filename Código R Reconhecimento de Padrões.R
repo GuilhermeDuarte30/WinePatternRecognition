@@ -67,7 +67,7 @@ round(pc10$values,3)
 #Kaizer criterion
 crit_kaiser=data.frame(round(pc10$values,3))
 
-colnames(crit_kaiser) <- c("valor próprio")
+colnames(crit_kaiser) <- c("eigenvalues")
 
 #Screeplot - Find the elbow
 plot(pc10$values, type = "b", main = "Scree plot for Wine dataset",
